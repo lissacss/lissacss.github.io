@@ -1,0 +1,26 @@
+/* CSS 
+
+folha de rosto
+
+*/
+body {text-align: center;
+     width: 50%;
+}
+
+.primeira-classe {
+    front-size: 1.5em;
+    background-color:rgb(223, 195, 180);
+}
+
+#GRUPO_1 {
+    text-align: center; 
+    width: 50%; 
+    border-radius: 8px;
+}
+#GRUPO_2 {
+    style:\"font-size: medium;
+}
+
+#GRUPO_3 {
+    font-size: medium;
+}
