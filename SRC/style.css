@@ -3,38 +3,112 @@
 folha de rosto
 
 */
-.body {text-align: center;
-     width: 50%;
+
+
+body {
+    text-align: center;
+    display: block;
+    background-color: aliceblue;
+    font-size: 1.5em;
 }
 
-.primeira-classe {
-    front-size: 1.5em;
-    background-color:rgb(240, 248, 255);
+
+header {
+    background-color: #AED6E8;
+    width: 100%;
+    height: 85px;
+
 }
+
+article{
+    background-color:aliceblue;
+    width: 100%;
+    height: 5px;
+
+}
+
+#profile-picture {
+    background: #C9E4F0;
+    border-radius: 100%;
+    width: 273px;
+    height: 273px;
+    shape-outside: url("../SRC/Image/1687906860119.jpg");
+    display: block;
+}
+
+.margem{
+    margin-left: 20px;
+    margin-right:20px;
+    margin-top: 50px;
+
+}
+
+.background-profile {
+    text-align: center;
+    background-color: #AED6E8;
+    border-radius: 100%;
+    width: 275px;
+    height: 279px;
+    margin-top: 10%;
+    display: inline-flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+section {
+    float: left;
+    width: 100%;
+    height: 330px;
+    padding-left: -15px;
+    padding-right: 15px;
+    margin-top: -130px;
+    padding-bottom: 15px;
+    background: #AED6E8;
+}
+
+h1 {
+color: #13475f;
+}
+
 .centralizar {
     text-align: center;
+    margin: auto;
+    padding: auto;
+    width: 100%;
 }
-.GRUPO_img {
+
+.profile-info{
+
+    padding-top: 130px;
+}
+
+
+a{
+    text-decoration: none;
+    color: #13475f;
+    m
+}
+
+a:hover{
+    text-decoration: solid;
+    color: aliceblue;
+}
+
+.article-center{
+    float: right;
+}
+/* .subnav {
+    background-color: #C9E4F0;
     text-align: center;
-    border-radius: 50%;
-    width: 95px;
-    height: 95px;
-}
-
-.GRUPO_2 {
-   font-size: medium;
-}
-
-.GRUPO_3 {
-    font-size: medium;
-}
-#circulo {
-    background: rgb(187, 216, 241);
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-}
-
-/* .CENTER{
-    margin
+    border-radius: 100%;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row-reverse;
 } */
+
+
+
