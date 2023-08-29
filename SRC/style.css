@@ -10,11 +10,13 @@ body {
     display: block;
     background-color: aliceblue;
     font-size: 1.5em;
+    font-family: "fantasy";
 }
 
 
 header {
     background-color: #AED6E8;
+    color: #13475f;
     width: 100%;
     height: 85px;
 
@@ -99,6 +101,9 @@ a:hover{
 
 .article-center{
     float: right;
+}
+.card{
+    box-shadow: 0 2px 5px 0 rgba(red, green, blue, alpha);
 }
 /* .subnav {
     background-color: #C9E4F0;
