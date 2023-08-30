@@ -22,8 +22,8 @@ header {
 
 }
 
-article{
-    background-color:aliceblue;
+article {
+    background-color: aliceblue;
     width: 100%;
     height: 5px;
 
@@ -38,9 +38,9 @@ article{
     display: block;
 }
 
-.margem{
+.margem {
     margin-left: 20px;
-    margin-right:20px;
+    margin-right: 20px;
     margin-top: 50px;
 
 }
@@ -57,7 +57,7 @@ article{
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    
+
 }
 
 section {
@@ -71,8 +71,19 @@ section {
     background: #AED6E8;
 }
 
+nav-items {
+    padding: 8px 16px;
+    width: auto;
+    border: none;
+    outline: 0;
+}
+
+.to-right {
+    float: right !important;
+}
+
 h1 {
-color: #13475f;
+    color: #13475f;
 }
 
 .centralizar {
@@ -82,29 +93,31 @@ color: #13475f;
     width: 100%;
 }
 
-.profile-info{
+.profile-info {
 
     padding-top: 130px;
 }
 
 
-a{
+a {
     text-decoration: none;
     color: #13475f;
     m
 }
 
-a:hover{
+a:hover {
     text-decoration: solid;
     color: aliceblue;
 }
 
-.article-center{
+.article-center {
     float: right;
 }
-.card{
+
+.card {
     box-shadow: 0 2px 5px 0 rgba(red, green, blue, alpha);
 }
+
 /* .subnav {
     background-color: #C9E4F0;
     text-align: center;
@@ -114,6 +127,3 @@ a:hover{
     display: flex;
     flex-direction: row-reverse;
 } */
-
-
-
