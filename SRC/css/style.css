@@ -49,19 +49,19 @@ body {
     display: inline;
   }
 
-  .button {
+  .button-acss {
     text-align: center;
     white-space: normal;
   }
   
-  .nav-items {
+  .nav-items-acss {
     padding: 8px 16px;
     width: auto;
     border: none;
     /* outline: 0; */
   }
   
-  .card {
+  .card-acss {
     box-shadow: 0 2px 5px 0 #0A2246(0, 0, 0, 0.16),
         0 2px 10px 0 #00223f(0, 0, 0, 0.12);
   }
@@ -79,14 +79,14 @@ body {
     padding: 12px 24px !important;
   }
   
-  .content {
+  .content-acss {
     margin-left: auto;
     margin-right: auto;
     max-width: 2000px;
     margin-top: 46px
   }
   
-  .container {
+  .container-acss {
     padding: 0.01em 16px;
     justify-content: center;
     align-items: center;
@@ -97,7 +97,7 @@ body {
     padding-bottom: 64px !important
   }
   
-  .wide {
+  .wide-acss {
     letter-spacing: 4px;
   }
   
@@ -122,15 +122,15 @@ body {
       url("../Fonts/elevate-sans/ElevateSans.ttf") format("woff2"),
   }
   
-  .opacity{
+  .opacity-acss {
     opacity: 0.60;
   }
   
-  .justify{
+  .justify-acss{
     text-align: justify;
   }
   
-  .center {
+  .center-acss {
     text-align: center;
   }
   
@@ -144,7 +144,7 @@ body {
     box-sizing: inherit;
   }
   
-  section p.justify{
+  section p.justify-acss{
     width: auto;
     margin: auto;
     padding: 10px 100px 10px 100px;
