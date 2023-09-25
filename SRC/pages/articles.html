@@ -1,38 +1,80 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content-acss="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top 5 músicas favoritas</title>
-   <link rel="stylesheet" href="./SRC/css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="./articles.css">
 </head>
+
 <body>
     <!-- HEADER -->
-    <header class="card-acss">
-        <nav class="nav-items-acssems">
-            <a class="button-acss to-left padding-large" href="#inicio"><strong>ACSS</strong></a>
-            <a class="button-acss to-rigt padding-large" href="#artigos">ARTIGOS</a>
-            <a class="button-acss to-left padding-large" href="#sobre">SOBRE</a>
-            <a class="button-acss to-left padding-large" href="#projetos">PROJETOS</a>
-            <a class="button-acss to-left padding-large" href="#contato">CONTATO</a>
+    <header class="card">
+        <nav class="nav-items">
+            <a class="button to-left padding-large" href="../../../index.html#inico"><strong>VLS</strong></a>
+            <a class="button to-right padding-large" href="../../../index.html#contato">CONTATO</a>
+            <a class="button to-right padding-large" href="../../../index.html#projetos">PROJETOS</a>
+            <a class="button to-right padding-large" href="../../../index.html#artigos">ARTIGOS</a>
+            <a class="button to-right padding-large" href="../../../index.html#sobre">SOBRE</a>
         </nav>
     </header>
-    <div id="inicio" class="content-acss">
-        <section id="sobre" class="container-acss content-acss center-acss  padding-64">
-            <h2 class="wide">SOBRE</h2>
-            <p class="opacity-acsscity"><i>Amo Formula 1</i></p>
-            <p class="justify-acsstify center-acss -acss">
-                Dou aula no SENAI e criei este site portifólio para servir de exemplo e modelo para meus alunos.
-            </p>
-        </section>
-        <section id="projeto" class="container-acss content-acss center-acss  padding-64 black-ground">
-            <h2 class="wide">PROJETOS</h2>
-        </section>
-        <section id="artigos" class="container-acss content-acss center-acss  padding-64"> ARTIGOS </section>
-        <section id="contato" class="container-acss content-acss center-acss  padding-32 black-ground"> CONTATO </section>
+    <div class="content-group">
+
+
+        <div class="left-side-bar card">
+            <button class="linkToArticle" onclick="openContent(event, 'Article1')"
+                id="abertoPorPadrao">Article1</button>
+            <button class="linkToArticle" onclick="openContent(event, 'Article2')">Article2</button>
+            <button class="linkToArticle" onclick="openContent(event, 'Article3')">Article3</button>
+        </div>
+        <div class="articles">
+            <section id="Article1" class="article-content card  cardBox">
+                <h3>Top 5 músicas favoritas</h3>
+                <p>
+
+                </p>
+            </section>
+
+            <section id="Article2" class="article-content card  cardBox">
+                <h3>Rede Social</h3>
+                <p>
+                    
+        	O filme basicamente fala sobre como o facebook foi criado e como isso trouxe consequências boas e ruins para os indivíduos no qual o fez. 
+A princípio Mark Zuckerberg criou um site onde as pessoas podem dizer se as mulheres de Harvard são “bonitas ou não” e a partir dessa brincadeira ele consegue atingir um número de usuários surpreendente e isso faz com que a internet da universidade caia. Isso trouxe vários processos jurídicos devido ao uso de imagens sem a permissão das pessoas encontradas nas fotos, mas isso o torna conhecido e três alunos se encontram com ele para propor a ele de fazer um site que possa conectar todos os alunos de forma exclusiva.
+A partir disso ele passa por um processo de criação onde cria a primeira versão de seu site. E uma de suas alterações acontece por conta de uma conversa com um garoto que o faz ter a ideia de colocar o “status” até porque o site não serviria somente para conversa entre amigos mas também para poderem encontrar pessoas para se relacionarem. Que é uma forma que se pode observar aplicações de interface web.
+Esse projeto trouxe vários problemas para a sua vida, mas ele não parece se preocupar muito sobre isso porque querendo ou não, ele estava revolucionando o meio das mídias sociais. No caminho ele perdeu o seu melhor amigo por conta de más influências de uma pessoa que só queria o próprio bem. 
+Na minha visão, esse filme mostra de forma bem realista de como o mercado funciona e como as pessoas pensam apenas em si próprias. Não é um filme que iria assistir novamente, mas foi uma forma bem diferente de trazer algo da área e  de uma forma fácil de entender certos conceitos.
+Ultimamente está se utilizando muito de dados pessoais de seus usuários para que seja fornecido para empresas para que possam utilizar de modo comercial e político seus dados. 
+
+
+ 
+
+                </p>
+            </section>
+
+            <section id="Article3" class="article-content card  cardBox">
+                <h3> Piratas do Vale do Silício</h3>
+                <p>
+                   
+
+                    O filme 'Piratas do Vale do Silício' retrata o nascimento e o crescimento da Apple e da Microsoft, as duas maiores empresas do mercado de informática. Também mostra a relação comercial entre Steve Jobs (Apple) e Bill Gates (Microsoft), os fundadores da empresa. Como a Microsoft ainda era uma pequena empresa de software a serviço de outras empresas, a Apple se destacou no mercado com inovações que criaram o computador pessoal para pessoas comuns com sistemas operacionais engenhosos e revolucionários. Ao longo da história, Bill Gates fez grandes avanços na Microsoft e na tecnologia da informação. 
+                    Depois de perceberem o sucesso que os computadores estavam obtendo, a IBM decidiu entrar em campo e então investiram em Bill Gates, que vendeu seu produto por $50.000 (que foi vendido sem  uma amostra de produção). Logo depois, a IBM criou o primeiro computador rodando o sistema operacional de Bill  chamado  MC-DOS. Desde então, Bill Gates percebeu que seus sistemas ainda eram minúsculos se comparados aos oferecidos pela Apple. Foi quando Bill teve a ideia de se infiltrar na Apple, colaborando com a Microsoft para fornecer serviços à mesma, e durante uma visita, Bill Gates notou como Steven tratava os seus funcionários, fazendo-os trabalhar sem parar e sempre os desprezando. O resultado desse tratamento foi o rompimento da parceria com o amigo Wozniak, fora a perda de produtividade de seus funcionários.
+                    Enquanto a Apple desenvolvia e trabalhava no sistema que Bill estava “roubou” informações e lançou o sistema operacional Windows, que só foi autorizado pela Microsoft. Essa grande mudança fez da Microsoft um sucesso e dinheiro suficiente para comprar o Apple 2 e iniciar uma nova era dominada pela Microsoft. 
+                    O que este filme mostra é a importância da tecnologia, que é um fator de acirrada competição entre as empresas. Se a tecnologia e a informação estão em suas mãos, o controle e os negócios também estão em suas mãos. A atitude de Bill Gates em relação ao gerenciamento da Apple é antiético porque a Microsoft serve a Apple, mas também não está errado porque sabe que uma ideia é uma grande arma competitiva e não a abre mão. A tecnologia se atualiza a cada dia, obrigando as empresas a se atualizarem, refinarem ideias e inovarem. Sem progresso, as empresas ficarão obsoletas, para trás e perderão sua vantagem competitiva em relação às outras no mercado e é isso que é conhecido como “poder” no meio empresarial.
+                    
+                </p>
+            </section>
+        </div>
     </div>
-    <footer class="container-acss  center-acss ">
-        <p class="center-acss opacity wide">By Alícia Silva</p>
+
+
+
+    <footer class="container content center">
+        <p class="center opacity wide">By Victor Silva</p>
     </footer>
+    <script src="../../script/script.js"></script>
 </body>
+
 </html>
