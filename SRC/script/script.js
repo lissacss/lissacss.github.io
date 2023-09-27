@@ -1,5 +1,5 @@
 function openContent(event, nomeArtigo) {
-    var i, article_content, linkToArticle;
+    let i, article_content, linkToArticle;
     article_content = document.getElementsByClassName("article-content");
     for (i = 0; i < article_content.length; i++) {
       article_content[i].style.display = "none";

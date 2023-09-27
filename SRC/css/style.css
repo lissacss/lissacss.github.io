@@ -42,11 +42,10 @@ body {
     text-decoration: solid;
   }
   
-  nav a img.logo{
-    max-width: 100px;
-    max-height: 100px;
-    float: right;
-    display: inline;
+  img#logo{
+    display: flex;
+    width: 100px;
+    height: 50px;
   }
 
   .button-acss {
@@ -209,7 +208,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     max-width: 2000px;
-    background-color: #0A2246(185, 208, 221);
+    background-color: rgb(185, 208, 221);
     font-size: 10px;
+    bottom: 0;
   }
 
