@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="114.60863mm"
+   height="41.2883mm"
+   viewBox="0 0 114.60863 41.2883"
+   version="1.1"
+   id="svg5"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-45.534921,-114.84488)">
+    <path
+       style=opacity-acsscity:0.93;fill:#c9e6ff;fill-opacity:1;stroke-width:0.264583"
+       d="m 128.6164,115.71894 31.52715,21.49577 -32.76774,18.91847 H 68.786488 47.648973 L 71.259592,135.03041 45.534921,114.84488 Z"
+       id="path790"
+       sodipodi:nodetypes="cccccccc"
+       inkscape:export-filename="logo_ACSS.svg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <g
+       id="g5523"
+       transform="translate(-1.3997213,1.5099247)">
+      <text
+         xml:space="preserve"
+         style="font-size:12.7px;opacity:0.93;fill:#7effe0;fill-opacity:1;stroke-width:0.264583"
+         x="88.056068"
+         y="139.36484"
+         id="text2345-5"><tspan
+           sodipodi:role="line"
+           id="tspan2343-9"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.7px;font-family:'Bukhari Script';-inkscape-font-specification:'Bukhari Script Bold';fill:#7effe0;fill-opacity:1;stroke-width:0.264583"
+           x="88.056068"
+           y="139.36484">ACSS</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:12.7px;opacity:0.93;fill:#006bc9;fill-opacity:1;stroke-width:0.264583"
+         x="88.803238"
+         y="138.79306"
+         id="text2345"><tspan
+           sodipodi:role="line"
+           id="tspan2343"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.7px;font-family:'Bukhari Script';-inkscape-font-specification:'Bukhari Script Bold';fill:#006bc9;fill-opacity:1;stroke-width:0.264583"
+           x="88.803238"
+           y="138.79306">ACSS</tspan></text>
+    </g>
+  </g>
+</svg>
