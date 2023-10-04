@@ -24,10 +24,16 @@
           function verificaIdade() {
             let idade = document.getElementById('idade').value;
             console.log(idade);
-            if (idade >= 18) {
-                document.getElementById('result').innerText = "A idade " + idade +" é maior de idade.";
-            } else if (idade < 18) {
-                document.getElementById('result').innerText = "A idade " + idade +" é menor de idade.";
+            if (idade >= 18 && idade <=29) {
+                document.getElementById('result').innerText = "A idade " + idade +" é um jovem adulto.";
+            } else if (idade >=13 && idade < 18) {
+                document.getElementById('result').innerText = "A idade " + idade +" é um adolecente.";
+            }else if (idade < 13) {
+                document.getElementById('result').innerText = "A idade " + idade +" é uma criança.";
+            }else if (idade >=29 && idade < 60) {
+                document.getElementById('result').innerText = "A idade " + idade +" é um adulto.";
+            }else if (idade >=60) {
+                document.getElementById('result').innerText = "A idade " + idade +" é um idoso.";
             }
         }
     </script>
