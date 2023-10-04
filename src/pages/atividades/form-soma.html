@@ -20,7 +20,7 @@
             let nome = document.getElementById('nome').value;
             document.getElementById('result').innerText = nome;
         }
-        // 1) Verifique a idade;
+// 1) Verifique a idade;
           function verificaIdade() {
             let idade = document.getElementById('idade').value;
             console.log(idade);
@@ -49,14 +49,30 @@
             }
 // 3) Verifique se há divisibilidade
         function  verificarDivisibilidade(a,b) {
-            let dividir = document.getElementById('numero').value;
+            let dividir = document.getElementById('dividir').value;
             console.log(dividir);
-            if  (dividir a % b == true)  {
-                document.getElementById('result').innerText = "O número " + dividir a +" é divisível por " + dividir b +".";
-            } else if (dividir a % b == false) {
+            if  (dividir a % b == 0)  {
+                document.getElementById('result').innerText = "O número " + a +" é divisível por " + b +".";
+            } else if (dividir a % b != 0) {
                 document.getElementById('result').innerText = "O número " + dividir a +" não é divisível por " + dividir b +".";
             } 
-             
+// 4) Verificação de temperatura
+          function verificarTemperatura() {
+            let temperatura = document.getElementById('temperatura').value;
+            console.log(temperatura);
+            if (temperatura <= 20 && temperatura >=15) {
+                document.getElementById('result').innerText = "A temperatura " + temperatura +"°C siguinifica frio.";
+            } else if (temperatura >20 && temperatura <= 25) {
+                document.getElementById('result').innerText = "A temperatura " + temperatura +"°C é uma temperatura ideal.";
+            }else if (temperatura > 25 && temperatura <=32 ) {
+                document.getElementById('result').innerText = "A temperatura " + temperatura +"°C siguinifica calor.";
+            }else if (temperatura > 32) {
+                document.getElementById('result').innerText = "A temperatura " + temperatura +"°C é extremamente quente.";
+            }else if (temperatura <15) {
+                document.getElementById('result').innerText = "A temperatura " + temperatura +"°C é extremamente frio.";
+            }
+        }
+            
     </script>
 </body>
 
