@@ -57,7 +57,7 @@
                 document.getElementById('result').innerText = "O número " + dividir a +" não é divisível por " + dividir b +".";
             } 
 // 4) Verificação de temperatura
-          function verificarTemperatura() {
+          function verificarTemperatura(num) {
             let temperatura = document.getElementById('temperatura').value;
             console.log(temperatura);
             if (temperatura <= 20 && temperatura >=15) {
@@ -72,7 +72,16 @@
                 document.getElementById('result').innerText = "A temperatura " + temperatura +"°C é extremamente frio.";
             }
         }
-            
+// 6) Cálculo do fatorial de um número     
+             function  calcularFatorial(num) {
+            let fatorial = document.getElementById('fatorial').value;
+            console.log(fatorial);
+             if (n === 1) {
+        return 1;
+    }
+    return n * calcularFatorial (n - 1);
+                document.getElementById('result').innerText = "O fatorial é " + fatorial +".";
+             }
     </script>
 </body>
 
