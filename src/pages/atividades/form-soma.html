@@ -10,9 +10,21 @@
 <body>
     <!-- <input type="text" id="nome"> -->
     <!-- <button onclick="salvar()">Salvar</button> -->
-    
+
     <input type="text" id="idade">
     <button onclick="verificaIdade()"> next </button>
+
+    <input type="text" id="número">
+    <button onclick="compararNumeros()"> next </button>
+
+    <input type="text" id="divisibilidade">
+    <button onclick="verificarDivisibilidade()"> next </button>
+
+    <input type="text" id="temperatura">
+    <button onclick="verificarTemperatura()"> next </button>
+
+    <input type="text" id="fatorial">
+    <button onclick="calcularFatorial()"> next </button>
     <p id="result"></p>
 
     <script>
@@ -20,69 +32,72 @@
             let nome = document.getElementById('nome').value;
             document.getElementById('result').innerText = nome;
         }
-// 1) Verifique a idade;
-          function verificaIdade() {
+        // 1) Verifique a idade;
+        function verificaIdade() {
             let idade = document.getElementById('idade').value;
             console.log(idade);
-            if (idade >= 18 && idade <=29) {
-                document.getElementById('result').innerText = "A idade " + idade +" é um jovem adulto.";
-            } else if (idade >=13 && idade < 18) {
-                document.getElementById('result').innerText = "A idade " + idade +" é um adolecente.";
-            }else if (idade < 13) {
-                document.getElementById('result').innerText = "A idade " + idade +" é uma criança.";
-            }else if (idade >=29 && idade < 60) {
-                document.getElementById('result').innerText = "A idade " + idade +" é um adulto.";
-            }else if (idade >=60) {
-                document.getElementById('result').innerText = "A idade " + idade +" é um idoso.";
+            if (idade >= 18 && idade <= 29) {
+                document.getElementById('result').innerText = "A idade " + idade + " é um jovem adulto.";
+            } else if (idade >= 13 && idade < 18) {
+                document.getElementById('result').innerText = "A idade " + idade + " é um adolecente.";
+            } else if (idade < 13) {
+                document.getElementById('result').innerText = "A idade " + idade + " é uma criança.";
+            } else if (idade >= 29 && idade < 60) {
+                document.getElementById('result').innerText = "A idade " + idade + " é um adulto.";
+            } else if (idade >= 60) {
+                document.getElementById('result').innerText = "A idade " + idade + " é um idoso.";
             }
         }
-// 2) Compare números
-         function compararNumeros(a,b) {
-            let numero = document.getElementById('numero').value;
-            console.log(numero);
-            if (numero a < b) {
-                document.getElementById('result').innerText = "O número " + numero b +" é maior que " + numero a +".";
-            } else if (numero a > b) {
-                document.getElementById('result').innerText = "O número " + numero a +" é maior que " + numero b +".";
-            }else if (numero a = b) {
-                document.getElementById('result').innerText = "O número " + numero a +" é igual ao número " + numero b +".";
-            }
-// 3) Verifique se há divisibilidade
-        function  verificarDivisibilidade(a,b) {
-            let dividir = document.getElementById('dividir').value;
-            console.log(dividir);
-            if  (dividir a % b == 0)  {
-                document.getElementById('result').innerText = "O número " + a +" é divisível por " + b +".";
-            } else if (dividir a % b != 0) {
-                document.getElementById('result').innerText = "O número " + dividir a +" não é divisível por " + dividir b +".";
-            } 
-// 4) Verificação de temperatura
-          function verificarTemperatura(num) {
-            let temperatura = document.getElementById('temperatura').value;
-            console.log(temperatura);
-            if (temperatura <= 20 && temperatura >=15) {
-                document.getElementById('result').innerText = "A temperatura " + temperatura +"°C siguinifica frio.";
-            } else if (temperatura >20 && temperatura <= 25) {
-                document.getElementById('result').innerText = "A temperatura " + temperatura +"°C é uma temperatura ideal.";
-            }else if (temperatura > 25 && temperatura <=32 ) {
-                document.getElementById('result').innerText = "A temperatura " + temperatura +"°C siguinifica calor.";
-            }else if (temperatura > 32) {
-                document.getElementById('result').innerText = "A temperatura " + temperatura +"°C é extremamente quente.";
-            }else if (temperatura <15) {
-                document.getElementById('result').innerText = "A temperatura " + temperatura +"°C é extremamente frio.";
-            }
-        }
-// 6) Cálculo do fatorial de um número     
-             function  calcularFatorial(num) {
-            let fatorial = document.getElementById('fatorial').value;
-            console.log(fatorial);
-             if (n === 1) {
-        return 1;
-    }
-    return n * calcularFatorial (n - 1);
-                document.getElementById('result').innerText = "O fatorial é " + fatorial +".";
-             }
+        // 2) Compare números
+        // function compararNumeros(a, b) {
+        //     let numero = document.getElementById('numero').value;
+        //     console.log(numero);
+        //     if (numero a < b) {
+        //         document.getElementById('result').innerText = "O número " + numero b + " é maior que " + numero a + ".";
+        //     } else if (numero a > b) {
+        //         document.getElementById('result').innerText = "O número " + numero a + " é maior que " + numero b + ".";
+        //     }else if (numero a = b) {
+        //         document.getElementById('result').innerText = "O número " + numero a + " é igual ao número " + numero b + ".";
+        //     }
+        // }
+            // 3) Verifique se há divisibilidade
+            // function verificarDivisibilidade(a, b) {
+            //     let dividir = document.getElementById('dividir').value;
+            //     console.log(dividir);
+            //     if (dividir a % b == 0) {
+            //         document.getElementById('result').innerText = "O número " + a + " é divisível por " + b + ".";
+            //     } else if (dividir a % b != 0) {
+            //         document.getElementById('result').innerText = "O número " + dividir a + " não é divisível por " + dividir b + ".";
+            //     }
+            // }
+                // 4) Verificação de temperatura
+                function verificarTemperatura(num) {
+                    let temperatura = document.getElementById('temperatura').value;
+                    console.log(temperatura);
+                    if (temperatura <= 20 && temperatura >= 15) {
+                        document.getElementById('result').innerText = "A temperatura " + temperatura + "°C siguinifica frio.";
+                    } else if (temperatura > 20 && temperatura <= 25) {
+                        document.getElementById('result').innerText = "A temperatura " + temperatura + "°C é uma temperatura ideal.";
+                    } else if (temperatura > 25 && temperatura <= 32) {
+                        document.getElementById('result').innerText = "A temperatura " + temperatura + "°C siguinifica calor.";
+                    } else if (temperatura > 32) {
+                        document.getElementById('result').innerText = "A temperatura " + temperatura + "°C é extremamente quente.";
+                    } else if (temperatura < 15) {
+                        document.getElementById('result').innerText = "A temperatura " + temperatura + "°C é extremamente frio.";
+                    }
+                }
+                // 6) Cálculo do fatorial de um número     
+                function calcularFatorial(num) {
+                    let fatorial = document.getElementById('fatorial').value;
+                    console.log(fatorial);
+                    if (n === 1) {
+                        return 1;
+                    }
+                    return n * calcularFatorial(n - 1);
+                    document.getElementById('result').innerText = "O fatorial é " + fatorial + ".";
+                }
     </script>
+
 </body>
 
 </html>
