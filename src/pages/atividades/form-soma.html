@@ -20,7 +20,7 @@
             let nome = document.getElementById('nome').value;
             document.getElementById('result').innerText = nome;
         }
-        // salvar();
+        // 1) Verifique a idade;
           function verificaIdade() {
             let idade = document.getElementById('idade').value;
             console.log(idade);
@@ -36,6 +36,18 @@
                 document.getElementById('result').innerText = "A idade " + idade +" é um idoso.";
             }
         }
+// 2) Compare números
+         function compararNumeros(a,b) {
+            let numero = document.getElementById('numero').value;
+            console.log(numero);
+            if (numero a < b) {
+                document.getElementById('result').innerText = "O número " + numero b +" é maior que " + numero a +".";
+            } else if (numero a > b) {
+                document.getElementById('result').innerText = "O número " + numero a +" é maior que " + numero b +".";
+            }else if (numero a = b) {
+                document.getElementById('result').innerText = "O número " + numero a +" é igual ao número " + numero b +".";
+            }
+             
     </script>
 </body>
 
