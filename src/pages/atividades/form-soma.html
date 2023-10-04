@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma</title>
+</head>
+
+<body>
+    <!-- <input type="text" id="nome"> -->
+    <!-- <button onclick="salvar()">Salvar</button> -->
+    
+    <input type="text" id="idade">
+    <button onclick="verificaIdade()"> next </button>
+    <p id="result"></p>
+
+    <script>
+        function salvar() {
+            let nome = document.getElementById('nome').value;
+            document.getElementById('result').innerText = nome;
+        }
+        // salvar();
+          function verificaIdade() {
+            let idade = document.getElementById('idade').value;
+            console.log(idade);
+            if (idade >= 18) {
+                document.getElementById('result').innerText = "A idade " + idade +" é maior de idade.";
+            } else if (idade < 18) {
+                document.getElementById('result').innerText = "A idade " + idade +" é menor de idade.";
+            }
+        }
+    </script>
+</body>
+
+</html>
