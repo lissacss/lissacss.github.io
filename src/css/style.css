@@ -212,4 +212,6 @@ body {
     font-size: 10px;
     bottom: 0;
   }
-
+  img{
+    height: 400px;
+}
