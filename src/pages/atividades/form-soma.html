@@ -37,10 +37,10 @@
     <button onclick="contagemRegressiva()"> regressiva </button>
     <p id="resultRegressiva"></p>
 
-    <!-- <input type="text" id="regressiva">
-    <button onclick="contagemRegressiva()"> regressiva </button>
-    <p id="resultRegressiva"></p>
- -->
+   <input type="text" id="tabuada">
+    <button onclick="contagemRegressiva()"> tabuada </button>
+    <p id="resultTabuada"></p>
+
 
     <script>
         function salvar() {
@@ -79,7 +79,7 @@
             }
         }
 
-        // // // 3) Verifique se há divisibilidade
+        // 3) Verifique se há divisibilidade
         function verificarDivisibilidade() {
             let x = document.getElementById('x').value;
             console.log(x);
@@ -125,13 +125,24 @@
         function contagemRegressiva() {
             let regressiva = document.getElementById('regressiva').value;
             console.log(regressiva);
-            for (let i = 0; i < regressiva; i--) {
-                regressiva = regressiva + i;{
+            for (let i = regressiva; i > 0; i--) {
+                regressiva = regressiva - i;{
                 document.getElementById('resultRegressiva').innerText = regressiva + "°C é extremamente frio.";
             }
         }
     }
+     //8) Tabuada de um número
+        function geratTabuada(){
+  var num = parseInt(document.getElementById("num").value);
+  var resposta = document.getElementById('resposta');
+  var tabuada='';
 
+  for(var count=1; count<=10 ; count++)
+   tabuada += num+" x "+count+" = "+
+               num*count+"<br />";
+  
+  resposta.innerHTML = tabuada;
+}
     </script>
 
 </body>
