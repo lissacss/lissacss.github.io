@@ -29,18 +29,36 @@
     <button onclick="verificarTemperatura()"> temperatura </button>
     <p id="resultTemperatura"></p>
 
+    <p>Português</p>
+    <input type="text" id="n1.1">
+    <input type="text" id="n1.2">
+    <input type="text" id="n1.3">
+
+    <p>Matemática</p>
+    <input type="text" id="n2.1">
+    <input type="text" id="n2.2">
+    <input type="text" id="n2.3">
+
+    <p>Inglês</p>
+    <input type="text" id="n3.1">
+    <input type="text" id="n3.2">
+    <input type="text" id="n3.3">
+    <button onclick="contagemRegressiva()"> boletim </button>
+
+    <p id="visualizarBoletim"></p>
+
     <input type="text" id="fatorial">
     <button onclick="calcularFatorial()"> fatorial </button>
     <p id="resultFatorial"></p>
 
     <input type="text" id="regressiva">
-    <button onclick="contagemRegressiva()"> regressiva </button>
+    <button onclick="contagemRegressiva()"> Contagem Regressiva </button>
     <p id="resultRegressiva"></p>
 
-    <!-- <input type="text" id="regressiva">
-    <button onclick="contagemRegressiva()"> regressiva </button>
-    <p id="resultRegressiva"></p>
- -->
+    <input type="text" id="tabuada">
+    <button onclick="criadorTabuada()"> tabuada </button>
+    <p id="resultTabuada"></p>
+
 
     <script>
         function salvar() {
@@ -79,7 +97,7 @@
             }
         }
 
-        // // // 3) Verifique se há divisibilidade
+        // 3) Verifique se há divisibilidade
         function verificarDivisibilidade() {
             let x = document.getElementById('x').value;
             console.log(x);
@@ -93,7 +111,7 @@
             }
         }
 
-         // 4) Verificação de temperatura
+        // 4) Verificação de temperatura
         function verificarTemperatura() {
             let temperatura = document.getElementById('temperatura').value;
             console.log(temperatura);
@@ -109,28 +127,72 @@
                 document.getElementById('resultTemperatura').innerText = temperatura + "°C é extremamente frio.";
             }
         }
+        // 5) Verificação de notas
 
-        // 6) Cálculo do fatorial de um número     
-        function calcularFatorial() {
-            let fatorial = document.getElementById('fatorial').value;
-            console.log(fatorial);
-            if (n === 1) {
-                return 1;
+        function verificarNotas() {
+            let p1 = document.getElementById('n1.1').value;
+            let p2 = document.getElementById('n1.2').value;
+            let p3 = document.getElementById('n1.3').value;
+            let m1 = document.getElementById('n2.1').value;
+            let m2 = document.getElementById('n2.2').value;
+            let m3 = document.getElementById('n2.3').value;
+            let i1 = document.getElementById('n3.1').value;
+            let i2 = document.getElementById('n3.2').value;
+            let i3 = document.getElementById('n3.3').value;
+
+            let b1 = document.getElementById('n1.1').value + getElementById('n2.1').value + document.getElementById('n3.1').value;
+            let b2 = document.getElementById('n1.2').value + getElementById('n2.2').value + document.getElementById('n3.2').value;
+            let b3 = document.getElementById('n1.3').value + getElementById('n2.3').value + document.getElementById('n3.3').value;
+
+            if (b1 + b2 + b3 >= 60) {
+                document.getElementById('visualizarBoletim').innerText = Aprovado;
+            } else if (b1 + b2 + b3 <= 60) {
+                document.getElementById('visualizarBoletim').innerText = Reprovado;
             }
-            return n * calcularFatorial(n - 1);
-            document.getElementById('resultFatorial').innerText = "O fatorial é " + fatorial + ".";
         }
+
+
+        // 6) Cálculo do fatorial de um número
+        function calcularFatorial() {
+            let valor = document.getElementById('fatorial').value;
+            console.log(valor);
+            document.getElementById('resultFatorial').innerText = "O fatorial é " + fatorial(valor) + ".";
+        }
+
+        function fatorial(value) {
+            if (value <= 2)
+                return value;
+            else
+                return value * fatorial(value - 1);
+        }
+
 
         // 7) Contagem regressiva
         function contagemRegressiva() {
-            let regressiva = document.getElementById('regressiva').value;
-            console.log(regressiva);
-            for (let i = 0; i < regressiva; i--) {
-                regressiva = regressiva + i;{
-                document.getElementById('resultRegressiva').innerText = regressiva + "°C é extremamente frio.";
+            let regressiva = parseFloat(document.getElementById('regressiva').value);
+            let contador = 0;
+            let resultado = "";
+            while (contador <= regressiva) {
+                resultado += (regressiva - contador) + "\n";
+                contador++;
             }
+
+            document.getElementById('resultRegressiva').innerText = resultado;
         }
-    }
+
+        //8) Tabuada de um número
+        function criadorTabuada() {
+            let tabuada = parseFloat(document.getElementById('tabuada').value);
+            let contadort = 0;
+            let resulta = "";
+            while (contadort <= tabuada) {
+                resulta += (tabuada * contadort) + "\n";
+                contadort++;
+            }
+
+            document.getElementById('resultTabuada').innerText = resulta;
+        }
+
 
     </script>
 
