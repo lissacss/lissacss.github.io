@@ -183,18 +183,18 @@
         //8) Tabuada de um número
         function criadorTabuada() {
             let tabuada = parseFloat(document.getElementById('tabuada').value);
-            let contadort = 0;
-            let resulta = "";
-            while (contadort <= tabuada) {
-                resulta += (tabuada * contadort) + "\n";
-                contadort++;
+            let contTabauada = 0;
+            let txt;
+            while (contTabauada <= 10) {
+                txt += tabuada + " x " + contTabauada + " = " + (tabuada * contTabauada) + "\n";
+                contTabauada++;
             }
 
-            document.getElementById('resultTabuada').innerText = resulta;
+            resultTabuada.innerText = txt;
         }
 
     </script>
-
+.
 </body>
 
 </html>
