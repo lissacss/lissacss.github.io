@@ -43,7 +43,7 @@
     <input type="text" id="n3.1">
     <input type="text" id="n3.2">
     <input type="text" id="n3.3">
-    <button onclick="contagemRegressiva()"> boletim </button>
+    <button onclick="verificarNotas()"> boletim </button>
 
     <p id="visualizarBoletim"></p>
 
@@ -130,27 +130,42 @@
         // 5) Verificação de notas
 
         function verificarNotas() {
-            let p1 = document.getElementById('n1.1').value;
-            let p2 = document.getElementById('n1.2').value;
-            let p3 = document.getElementById('n1.3').value;
-            let m1 = document.getElementById('n2.1').value;
-            let m2 = document.getElementById('n2.2').value;
-            let m3 = document.getElementById('n2.3').value;
-            let i1 = document.getElementById('n3.1').value;
-            let i2 = document.getElementById('n3.2').value;
-            let i3 = document.getElementById('n3.3').value;
-
-            let b1 = document.getElementById('n1.1').value + getElementById('n2.1').value + document.getElementById('n3.1').value;
-            let b2 = document.getElementById('n1.2').value + getElementById('n2.2').value + document.getElementById('n3.2').value;
-            let b3 = document.getElementById('n1.3').value + getElementById('n2.3').value + document.getElementById('n3.3').value;
-
-            if (b1 + b2 + b3 >= 60) {
-                document.getElementById('visualizarBoletim').innerText = Aprovado;
-            } else if (b1 + b2 + b3 <= 60) {
-                document.getElementById('visualizarBoletim').innerText = Reprovado;
-            }
+            let p1 = parseFloat(document.getElementById('n1.1').value);
+            let p2 = parseFloat(document.getElementById('n1.2').value);
+            let p3 = parseFloat(document.getElementById('n1.3').value);
+            let total_pt = p1 + p2 + p3;
+            let m1 = parseFloat(document.getElementById('n2.1').value);
+            let m2 = parseFloat(document.getElementById('n2.2').value);
+            let m3 = parseFloat(document.getElementById('n2.3').value);
+            let total_mt = m1 + m2 + m3;
+            let i1 = parseFloat(document.getElementById('n3.1').value);
+            let i2 = parseFloat(document.getElementById('n3.2').value);
+            let i3 = parseFloat(document.getElementById('n3.3').value);
+            let total_ing = i1 + i2 + i3;
+            
+            visualizarBoletim.innerText = " PORTUGUÊS \n " +
+                                            "1º b: " + p1 + "\n" +
+                                            "2º b: " + p2 + "\n" +
+                                            "3º b: " + p3 + "\n" +
+                                            "Total: " + total_pt + "\n" 
+                                            "Situação: " + isApproved(total_pt) + "\n"
+                                           
         }
 
+        function isApproved(params) {
+            if(params >= 60)
+                return "APROVADO"
+            else
+                return "REPROVADO"
+        }
+        
+        function verificaAprovadoTodasMaterias(mat, port, ing) {
+            if (mat >= 60 && port >= 60 && ing >= 60) {
+                return "Aprovado"
+            } else {
+                return "Reprovado"
+            }
+        }
 
         // 6) Cálculo do fatorial de um número
         function calcularFatorial() {
@@ -158,14 +173,12 @@
             console.log(valor);
             document.getElementById('resultFatorial').innerText = "O fatorial é " + fatorial(valor) + ".";
         }
-
         function fatorial(value) {
             if (value <= 2)
                 return value;
             else
                 return value * fatorial(value - 1);
         }
-
 
         // 7) Contagem regressiva
         function contagemRegressiva() {
@@ -184,7 +197,7 @@
         function criadorTabuada() {
             let tabuada = parseFloat(document.getElementById('tabuada').value);
             let contTabauada = 0;
-            let txt;
+            let txt = "TABUÁDA \n";
             while (contTabauada <= 10) {
                 txt += tabuada + " x " + contTabauada + " = " + (tabuada * contTabauada) + "\n";
                 contTabauada++;
