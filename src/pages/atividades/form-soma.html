@@ -142,7 +142,6 @@
             let i2 = parseFloat(document.getElementById('n3.2').value);
             let i3 = parseFloat(document.getElementById('n3.3').value);
             let total_ing = i1 + i2 + i3;
-            console.log("Teste"+p1);
             
             document.getElementById('visualizarBoletimpt').innerText =
                                             " PORTUGUÊS \n " +
@@ -172,7 +171,7 @@
           
 
         function isApproved(params) {
-            if(params >= 60){
+            if(params >= 60.0){
                 return "APROVADO"
             } else{
                 return "REPROVADO"
