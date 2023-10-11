@@ -143,20 +143,24 @@
             let i3 = parseFloat(document.getElementById('n3.3').value);
             let total_ing = i1 + i2 + i3;
             
-            visualizarBoletimpt.innerText = " PORTUGUÊS \n " +
+            document.getElementById('visualizarBoletimpt').innerText =
+                                            " PORTUGUÊS \n " +
                                             "1º b: " + p1 + "\n" +
                                             "2º b: " + p2 + "\n" +
                                             "3º b: " + p3 + "\n" +
                                             "Total: " + total_pt + "\n" 
                                             "Situação: " + isApproved(total_pt) + "\n"
             
-            visualizarBoletimmt.inetText=   " MATEMÁTICA \n " +
+             document.getElementById('visualizarBoletimmt').inetText=  
+                                            " MATEMÁTICA \n " +
                                             "1º b: " + m1 + "\n" +
                                             "2º b: " + m2 + "\n" +
                                             "3º b: " + m3 + "\n" +
                                             "Total: " + total_mt + "\n" 
-                                            "Situação: " + isApproved(total_mt) + "\n"
-             visualizarBoletiming.inetText=  " INGLÊS \n " +
+                                            "Situação: " + isApproved(total_mt) + "\n" 
+            
+              document.getElementById('visualizarBoletiming').inetText=  
+                                            " INGLÊS \n " +
                                             "1º b: " + i1 + "\n" +
                                             "2º b: " + i2 + "\n" +
                                             "3º b: " + i3 + "\n" +
