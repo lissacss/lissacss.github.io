@@ -149,17 +149,15 @@
                                             "3º b: " + p3 + "\n" +
                                             "Total: " + total_pt + "\n" 
                                             "Situação: " + isApproved(total_pt) + "\n"
-                                           
-        }
-           visualizarBoletim.innerText = " MATEMÁTICA \n " +
+
+            visualizarBoletim.innerText = " MATEMÁTICA \n " +
                                             "1º b: " + m1 + "\n" +
                                             "2º b: " + m2 + "\n" +
                                             "3º b: " + m3 + "\n" +
                                             "Total: " + total_mt + "\n" 
                                             "Situação: " + isApproved(total_pt) + "\n"
-                                           
-        }
-           visualizarBoletim.innerText = " INGLÊS \n " +
+            
+             visualizarBoletim.innerText = " INGLÊS \n " +
                                             "1º b: " + i1 + "\n" +
                                             "2º b: " + i2 + "\n" +
                                             "3º b: " + i3 + "\n" +
@@ -167,6 +165,7 @@
                                             "Situação: " + isApproved(total_pt) + "\n"
                                            
         }
+          
 
         function isApproved(params) {
             if(params >= 60)
