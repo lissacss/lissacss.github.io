@@ -142,28 +142,29 @@
             let i2 = parseFloat(document.getElementById('n3.2').value);
             let i3 = parseFloat(document.getElementById('n3.3').value);
             let total_ing = i1 + i2 + i3;
+            console.log("Teste"+p1);
             
             document.getElementById('visualizarBoletimpt').innerText =
                                             " PORTUGUÊS \n " +
-                                            "1º b: " + p1 + "\n" +
-                                            "2º b: " + p2 + "\n" +
-                                            "3º b: " + p3 + "\n" +
+                                            "1º t: " + p1 + "\n" +
+                                            "2º t: " + p2 + "\n" +
+                                            "3º t: " + p3 + "\n" +
                                             "Total: " + total_pt + "\n" 
                                             "Situação: " + isApproved(total_pt) + "\n"
             
              document.getElementById('visualizarBoletimmt').inetText=  
                                             " MATEMÁTICA \n " +
-                                            "1º b: " + m1 + "\n" +
-                                            "2º b: " + m2 + "\n" +
-                                            "3º b: " + m3 + "\n" +
+                                            "1º t: " + m1 + "\n" +
+                                            "2º t: " + m2 + "\n" +
+                                            "3º t: " + m3 + "\n" +
                                             "Total: " + total_mt + "\n" 
                                             "Situação: " + isApproved(total_mt) + "\n" 
             
               document.getElementById('visualizarBoletiming').inetText=  
                                             " INGLÊS \n " +
-                                            "1º b: " + i1 + "\n" +
-                                            "2º b: " + i2 + "\n" +
-                                            "3º b: " + i3 + "\n" +
+                                            "1º t: " + i1 + "\n" +
+                                            "2º t: " + i2 + "\n" +
+                                            "3º t: " + i3 + "\n" +
                                             "Total: " + total_ing + "\n" 
                                             "Situação: " + isApproved(total_ing) + "\n"
         
@@ -171,10 +172,11 @@
           
 
         function isApproved(params) {
-            if(params >= 60)
+            if(params >= 60){
                 return "APROVADO"
-            else
+            } else{
                 return "REPROVADO"
+        }
         }
         
         function verificaAprovadoTodasMaterias(mat, port, ing) {
