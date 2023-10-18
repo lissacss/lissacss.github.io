@@ -5,18 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soma</title>
-    <link rel="stylesheet" href="../../../public/bootstrap/css_bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/src/public/botstrap/css_bootstrap.min.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <style>
+        .container-fluid{
+      display: inline-block;
+      margin: 118px 300px 200px 300px;
+    }
+    </style>
 </head>
 
 <body>
-    <div class="container-fluid">
 
+    <header class="card-acss">
+        <nav class="nav-items-acss">
+            <a class="button-acss to-left padding-large" href="#inicio">
+                <strong>
+                    <img id="logo" src="/src/image/logo_ACSS.png" alt="">
+                </strong>
+            </a>
+            <a class="button-acss to-right padding-large" href="#sobre">SOBRE</a>
+            <a class="button-acss to-right padding-large" href="#projetos">PROJETOS</a>
+            <a class="button-acss to-right padding-large" href="#artigos">ARTIGOS</a>
+            <a class="button-acss to-right padding-large" href="#contato">CONTATO</a>
+        </nav>
+    </header>
+<nav class="div-tab"></nav>
+    <div class="container-fluid" >
         <div class="row">
             <div class="col-4">
                 <div class="row-cols-4" id="materia1">
                     <div class="col-2 p-md-4">
-                        <label for="nomeMateria">Matéria</label>
+                        <label for="nomeNome" > Nome </label>
+                        <input type="text" id="nomeNome">
+                    </div>
+                    <div class="col-2 p-md-4">
+                        <label for="nomeInstituicao"> Instituição de Ensino </label>
+                        <input type="text" id="nomeInstituicao">
+                    </div>
+                    <div class="col-2 p-md-4">
+                        <label for="nomeCurso"> Curso </label>
+                        <input type="text" id="nomeCurso">
+                    </div>
+                    <div class="col-2 p-md-4">
+                        <label for="nomeMateria"> Matéria </label>
                         <input type="text" id="nomeMateria">
                     </div>
                     <div class="col-2 p-md-4 input-group">
@@ -26,25 +58,26 @@
                         <input type="number">
                     </div>
                 </div>
-                <button onclick="save()">Verificar Notas </button>
+                <button onclick="save()" class="btn btn-light"> Verificar Notas </button>
                 <p class="m-3 p-2" id="resultNotas"></p>
             </div>
         </div>
-        
-        </div>
- 
+
+    </div>
+
 
     <script>
-       
+
 
         let materia = { id: 0, nome: "", notas: [], total: 0, printInfo: "" };
         let materias = [];
+       
         function save() {
             let inputNotas = [];
             let totalNotas = 0;
             let resultados = `<b>BOLETIM</b> <br>`;
-
-            document.querySelectorAll("div.input-group input").forEach(e => {
+    
+            document.querySelectorAll("div.input-group > input").forEach(e => {
                 inputNotas.push(parseFloat(e.value))
                 totalNotas += parseFloat(e.value);
             })
@@ -52,18 +85,21 @@
             materias.push(
                 {
                     id: materia.id++,
-                    nome: nomeMateria.value.toLocaleUpperCase(),
+                    nome: nomeNome.value.toLocaleUpperCase(),
+                    instituicao: nomeInstituicao.value.toLocaleUpperCase(),
+                    curso: nomeCurso.value.toLocaleUpperCase(),
+                    materia: nomeCurso.value.toLocaleUpperCase(),
                     notas: inputNotas,
                     total: totalNotas,
                     info: `<hr>
                             RESULTADO DE: <b>${nomeMateria.value.toLocaleUpperCase()}</b> 
-                            <ul>
-                                <li><b>1º Bimestre:</b> ${inputNotas[0]}</li>
-                                <li><b>2º Bimestre:</b> ${inputNotas[1]}</li>
-                                <li><b>3º Bimestre:</b> ${inputNotas[2]}</li>
-                                <li><b>4º Bimestre:</b> ${inputNotas[3]}</li>
-                                <li>TOTAL FINAL: <b>${totalNotas}</b></li>
-                                <li>STATUS: <b>${isAprovadoOuReprovado(totalNotas)}</b></li>
+                            <ul class="list-group">
+                                <li class="list-group-item" ><b>1º Bimestre:</b> ${inputNotas[0]}</li>
+                                <li class="list-group-item" ><b>2º Bimestre:</b> ${inputNotas[1]}</li>
+                                <li class="list-group-item" ><b>3º Bimestre:</b> ${inputNotas[2]}</li>
+                                <li class="list-group-item" ><b>4º Bimestre:</b> ${inputNotas[3]}</li>
+                                <li class="list-group-item" >TOTAL FINAL: <b>${totalNotas}</b></li>
+                                <li class="list-group-item" >STATUS: <b>${isAprovadoOuReprovado(totalNotas)}</b></li>
                             </ul>
                             `
                 }
@@ -84,10 +120,12 @@
                 return "REPROVADO! :("
             }
         }
-       
+
     </script>
 
-    <script src="../../../public/bootstrap/css_bootstrap.min.css"></script>
+    <script src="/src/public/botstrap/css_bootstrap.min.css"></script>
 </body>
 
 </html>
+
+

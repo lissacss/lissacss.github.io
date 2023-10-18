@@ -22,13 +22,14 @@ body {
     width: 100%;
     position: fixed;
     z-index: 1;
-    display: block;
+    display: inline-block;
   }
   
   nav {
     overflow: hidden;
     width: 100%;
     box-sizing: inherit;
+    display: inline-block;
   }
   
   nav a {
@@ -214,4 +215,12 @@ body {
   }
   img{
     height: 400px;
+}
+div-tab{
+  margin-top: 100px;
+}
+
+
+.input-group > input{
+
 }
