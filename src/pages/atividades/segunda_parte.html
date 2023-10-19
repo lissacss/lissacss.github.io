@@ -69,14 +69,15 @@
 
         let materia = { id: 0, nome: "", notas: [], total: 0, printInfo: "" };
         let materias = [];
-       
+        let user = {nome: "",instituicao:"", curso:""};
         function save() {
             let inputNotas = [];
             let totalNotas = 0;
-            let resultados = `<b>BOLETIM DE: ${user.nome.toLocaleUpperCase()}</b><br><b>INSTITUIÇÃO DE ESCOLA: ${user.instituicao.toLocaleUpperCase()} </b>`;
+            user.nome = nomeUsuario.value;
+            user.instituicao = nomeInstituicao.value;
+            let resultados = `<b>BOLETIM DE: ${user.nome.toLocaleUpperCase()}</b><br><b>INSTITUIÇÃO DE ENSINO: ${user.instituicao.toLocaleUpperCase()} </b>`;
 
-    
-            document.querySelectorAll("div.input-group > input").forEach(e => {
+            document.querySelectorAll("div.input-group input").forEach(e => {
                 inputNotas.push(parseFloat(e.value))
                 totalNotas += parseFloat(e.value);
             })
