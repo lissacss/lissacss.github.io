@@ -44,7 +44,10 @@
                         <label for="nomeInstituicao"> Instituição de Ensino </label>
                         <input type="text" class="form-label" id="nomeInstituicao">
                     </div>
-                   
+                   <div class="form-floating mb-3">
+                        <label for="nomeCurso"> Curso </label>
+                        <input type="text" class="form-label" id="nomeCurso">
+                    </div>
                     <div class="form-floating mb-3">
                         <label for="nomeMateria"> Matéria </label>
                         <input type="text" class="form-label" id="nomeMateria">
@@ -75,7 +78,7 @@
             let totalNotas = 0;
             user.nome = nomeUsuario.value;
             user.instituicao = nomeInstituicao.value;
-            let resultados = `<b>BOLETIM DE: ${user.nome.toLocaleUpperCase()}</b><br><b>INSTITUIÇÃO DE ENSINO: ${user.instituicao.toLocaleUpperCase()} </b>`;
+            let resultados = `<b>BOLETIM DE: ${user.nome.toLocaleUpperCase()}</b><br><b>INSTITUIÇÃO DE ENSINO: ${user.instituicao.toLocaleUpperCase()} </b><b>CURSO: ${user.curso.toLocaleUpperCase()} </b>`;
 
             document.querySelectorAll("div.input-group input").forEach(e => {
                 inputNotas.push(parseFloat(e.value))
