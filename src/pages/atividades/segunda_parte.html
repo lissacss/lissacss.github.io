@@ -84,21 +84,18 @@
             materias.push(
                 {
                     id: materia.id++,
-                    nome: nomeNome.value.toLocaleUpperCase(),
-                    instituicao: nomeInstituicao.value.toLocaleUpperCase(),
-                    curso: nomeCurso.value.toLocaleUpperCase(),
-                    materia: nomeMateria.value.toLocaleUpperCase(),
+                    nome: nomeMateria.value.toLocaleUpperCase(),
                     notas: inputNotas,
                     total: totalNotas,
-                    info: `<hr>  
+                    info: `<hr>
                             RESULTADO DE: <b>${nomeMateria.value.toLocaleUpperCase()}</b> 
                             <ul class="list-group">
-                                <li class="list-group-item" ><b>1º Bimestre:</b> ${inputNotas[0]}</li>
-                                <li class="list-group-item" ><b>2º Bimestre:</b> ${inputNotas[1]}</li>
-                                <li class="list-group-item" ><b>3º Bimestre:</b> ${inputNotas[2]}</li>
-                                <li class="list-group-item" ><b>4º Bimestre:</b> ${inputNotas[3]}</li>
-                                <li class="list-group-item" >TOTAL FINAL: <b>${totalNotas}</b></li>
-                                <li class="list-group-item" >STATUS: <b>${isAprovadoOuReprovado(totalNotas)}</b></li>
+                                <li class="list-group-item"><b>1º Bimestre:</b> ${inputNotas[0]}</li>
+                                <li class="list-group-item"><b>2º Bimestre:</b> ${inputNotas[1]}</li>
+                                <li class="list-group-item"><b>3º Bimestre:</b> ${inputNotas[2]}</li>
+                                <li class="list-group-item"><b>4º Bimestre:</b> ${inputNotas[3]}</li>
+                                <li class="list-group-item">TOTAL FINAL: <b>${totalNotas}</b></li>
+                                <li class="list-group-item">STATUS: <b>${isAprovadoOuReprovado(totalNotas)}</b></li>
                             </ul>
                             `
                 }
