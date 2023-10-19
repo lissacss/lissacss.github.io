@@ -44,15 +44,12 @@
                         <label for="nomeInstituicao"> Instituição de Ensino </label>
                         <input type="text" class="form-label" id="nomeInstituicao">
                     </div>
-                    <div class="form-floating mb-3">
-                        <label for="nomeCurso"> Curso </label>
-                        <input type="text" class="form-label" id="nomeCurso">
-                    </div>
+                   
                     <div class="form-floating mb-3">
                         <label for="nomeMateria"> Matéria </label>
                         <input type="text" class="form-label" id="nomeMateria">
                     </div>
-                    <div class="col-2 p-md-4 input-group">
+                    <div class="col-2 p-md-4 input-group form-control">
                         <input type="number">
                         <input type="number">
                         <input type="number">
@@ -76,7 +73,8 @@
         function save() {
             let inputNotas = [];
             let totalNotas = 0;
-            let resultados = `<b>BOLETIM</b> <br>`;
+            let resultados = `<b>BOLETIM DE: ${user.nome.toLocaleUpperCase()}</b><br><b>INSTITUIÇÃO DE ESCOLA: ${user.instituicao.toLocaleUpperCase()} </b>`;
+
     
             document.querySelectorAll("div.input-group > input").forEach(e => {
                 inputNotas.push(parseFloat(e.value))
@@ -92,10 +90,7 @@
                     materia: nomeMateria.value.toLocaleUpperCase(),
                     notas: inputNotas,
                     total: totalNotas,
-                    info: `<hr>
-                    NOME: <b>${nomeNome.value.toLocaleUpperCase()} \n </b>
-                    INSTITUIÇÃO DE ENSINO: <b>${nomeInstituicao.value.toLocaleUpperCase()} \n </b>  
-                    CURSO: <b>${nomeCurso.value.toLocaleUpperCase()} \n </b>  
+                    info: `<hr>  
                             RESULTADO DE: <b>${nomeMateria.value.toLocaleUpperCase()}</b> 
                             <ul class="list-group">
                                 <li class="list-group-item" ><b>1º Bimestre:</b> ${inputNotas[0]}</li>
