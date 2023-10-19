@@ -76,8 +76,9 @@
         function save() {
             let inputNotas = [];
             let totalNotas = 0;
-            user.nome = nomeUsuario.value;
+            user.nome = nomeNome.value;
             user.instituicao = nomeInstituicao.value;
+             user.curso = nomeCurso.value;
             let resultados = `<b>BOLETIM DE: ${user.nome.toLocaleUpperCase()}</b><br><b>INSTITUIÇÃO DE ENSINO: ${user.instituicao.toLocaleUpperCase()} </b><b>CURSO: ${user.curso.toLocaleUpperCase()} </b>`;
 
             document.querySelectorAll("div.input-group input").forEach(e => {
