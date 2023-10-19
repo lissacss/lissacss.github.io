@@ -89,10 +89,13 @@
                     nome: nomeNome.value.toLocaleUpperCase(),
                     instituicao: nomeInstituicao.value.toLocaleUpperCase(),
                     curso: nomeCurso.value.toLocaleUpperCase(),
-                    materia: nomeCurso.value.toLocaleUpperCase(),
+                    materia: nomeMateria.value.toLocaleUpperCase(),
                     notas: inputNotas,
                     total: totalNotas,
                     info: `<hr>
+                    NOME: <b>${nomeNome.value.toLocaleUpperCase()}</b>
+                    INSTITUIÇÃO DE ENSINO: <b>${nomeInstituicao.value.toLocaleUpperCase()}</b> 
+                    CURSO: <b>${nomeCurso.value.toLocaleUpperCase()}</b> 
                             RESULTADO DE: <b>${nomeMateria.value.toLocaleUpperCase()}</b> 
                             <ul class="list-group">
                                 <li class="list-group-item" ><b>1º Bimestre:</b> ${inputNotas[0]}</li>
