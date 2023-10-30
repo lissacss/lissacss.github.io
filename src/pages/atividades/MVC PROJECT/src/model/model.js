@@ -1,4 +1,10 @@
 class Usuario {
+    constructor(){
+        this.nome = "";
+        this.idade = 0;
+        this.login = "";
+        this.senha = "";
+    }
     constructor( nome, idade, login, senha){
         this.nome = nome;
         this.idade = idade;
