@@ -1,7 +1,7 @@
 import { viewController } from "./view/viewController.js";
 import { Usuario } from "./model/usuario.model.js";
 
-let data = [{}];
+let data = [];
 
 const saveData = (event) => {
   event.preventDefault();
@@ -12,7 +12,8 @@ const saveData = (event) => {
     senha.value
   );
   data.push(newData);
-  viewController.update(newData);
+
+  viewController.update(data, new Usuario("",0,"",""));
 };
 
 const controller = {

@@ -18,10 +18,18 @@ const formNewUser = {
        
        <label for="senha" class="form-label">Senha</label>
         <input class="form-control" type="password" id="senha">
-
-        <button type="submit" class="btn btn-primary mt-4"> Salvar </button>
-       `
+       
+        <button type="submit" class="btn btn-primary mt-4">Salvar</button>
+       
+        `
        root.appendChild(formTemplate);
     },
+    update:(user)=>{
+        //ATULIZAR OS VALORES DE INPUTS PARA OS VALORES DO USUÁRIO SELECIONADO
+        nome.value = user.getNome();
+        idade.value = user.getIdade();
+        login.value = user.getLogin();
+        senha.value = user.getSenha();
+    }
 }
 export {formNewUser}
