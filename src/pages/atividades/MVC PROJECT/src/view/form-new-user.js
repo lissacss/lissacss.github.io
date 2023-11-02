@@ -16,7 +16,7 @@ const formNewUser = {
        <label for="login" class="form-label">Login</label>
         <input class="form-control" type="text" id="login">
        
-       <label for="senha" class="form-label">Senha</label>
+       <label for="senha" class="form-label ">Senha</label>
         <input class="form-control" type="password" id="senha">
        
         <button type="submit" class="btn btn-primary mt-4">Salvar</button>

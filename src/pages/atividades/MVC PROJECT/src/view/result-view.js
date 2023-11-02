@@ -3,7 +3,7 @@ const resultView = {
     const root = document.getElementById("root");
     const tableResult = document.createElement("table");
     tableResult.setAttribute("id", "resultTable");
-    tableResult.className = "table table-borderless";
+    tableResult.className = "table table-borderless table-hover";
     tableResult.innerHTML = `
         <thead>
             <tr>
@@ -27,10 +27,10 @@ const resultView = {
       const newLine = document.createElement("tr")
       newLine.innerHTML = `
         <th scope="row">#${i+1}</th>            
-        <td>${params[i].getNome()}</td>            
-        <td>${params[i].getIdade()}</td>            
-        <td>${params[i].getLogin()}</th>            
-        <td>${params[i].getSenha()}</th>            
+        <td class="text-success"><strong>${params[i].getNome()}</strong></td>            
+        <td><strong>${params[i].getIdade()}</strong></td>            
+        <td class="text-primary fst-italic"><strong>${params[i].getLogin()}</strong></td>            
+        <td><input value="${params[i].getSenha()}" disabled type="password"></input></td>            
       `
       tRBody.appendChild(newLine)
     }
