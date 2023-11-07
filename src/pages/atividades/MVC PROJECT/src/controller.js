@@ -4,6 +4,7 @@ import { Usuario } from "./model/usuario.model.js";
 let data = [];
 const submitType = {NEW:0,UPDATE:1};
 let submitState = submitType.NEW;
+let currentId = null;
 
 const handleSubmit = (event) =>{
   event.preventDefault();
@@ -15,6 +16,8 @@ const handleSubmit = (event) =>{
     addUser(user);
   } else if (submitState == submitType.UPDATE){
     //VAMOS ATUALIZAR UM USUÁRIO EXISTENTE
+    updateUser(user);
+    btnSub,inertext = "NEW"
   }
   // ATUALIZAR COMPONENTES HTML: TABELA E FORMULÁRIO
   viewController.update(data, new Usuario("",null,"",""))
