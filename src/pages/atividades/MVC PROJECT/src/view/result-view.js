@@ -24,15 +24,24 @@ const resultView = {
     const tRBody = document.getElementById("users-result");
     tRBody.innerHTML = ``;
     for (let i = 0; i < params.length; i++) {
-      const newLine = document.createElement("tr")
+      const newLine = document.createElement("tr");
+      newLine.className = "row-line";
+      newLine.setAttribute("id", `user${i}`);
       newLine.innerHTML = `
-        <th scope="row">#${i+1}</th>            
-        <td class="text-success"><strong>${params[i].getNome()}</strong></td>            
+        <th scope="row">#${i + 1}</th>            
+        <td class="text-success"><strong ><b>${params[
+          i
+        ].getNome()}</b></strong></td>            
         <td><strong>${params[i].getIdade()}</strong></td>            
-        <td class="text-primary fst-italic"><strong>${params[i].getLogin()}</strong></td>            
-        <td><input value="${params[i].getSenha()}" disabled type="password"></input></td>            
-      `
-      tRBody.appendChild(newLine)
+        <td><b class="text-info"><i>${params[
+          i
+        ].getLogin()}</b></i></td>            
+        <td><input class="form-control" type="password" value="${params[
+          i
+        ].getSenha()}" disabled style="border: none !important;
+        border-color: transparent !important;"></td>                    
+      `;
+      tRBody.appendChild(newLine);
     }
   },
 };
